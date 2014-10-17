@@ -29,6 +29,7 @@ module Itunes
       :bid,
       :bundle_id,
       :bvrs,
+      :cancellation_date,
       :download_id,
       :expires_date,
       :in_app,
@@ -58,6 +59,7 @@ module Itunes
       @bid = receipt_attributes[:bid]
       @bundle_id = receipt_attributes[:bundle_id]
       @bvrs = receipt_attributes[:bvrs]
+      @cancellation_date = receipt_attributes[:cancellation_date]
       @download_id = receipt_attributes[:download_id]
       @expires_date = if receipt_attributes[:expires_date]
         # Time.at(receipt_attributes[:expires_date].to_i / 1000)
